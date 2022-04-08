@@ -32,3 +32,12 @@ steps:
   inputs:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
+- task: DownloadBuildArtifacts@1
+  inputs:
+    buildType: 'specific'
+    project: '0b068db4-3fd6-43b5-8c40-6112bdfd4022'
+    pipeline: '5'
+    specificBuildWithTriggering: true
+    buildVersionToDownload: 'latest'
+    downloadType: 'single'
+    downloadPath: '$(System.ArtifactsDirectory)'
