@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "/home/tolulope/.dotnet/store/|arch|/|tfm|",
+      "/home/tolulope/.nuget/packages"
+    ]
+  }
+}
